@@ -17,6 +17,7 @@ async function addOrder(ordernumber,orderdetails,ordercost)
   order_details:orderdetails,
   order_cost:ordercost })
   console.log("function called")
+  console.error(error)
 }
 
 module.exports=addOrder;
