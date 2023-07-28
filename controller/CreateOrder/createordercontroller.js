@@ -22,6 +22,7 @@ module.exports= (req,res,next)=>{
    var ordernumber = Math.floor(Math.random() * 3000)
    //addOrder(ordernumber,orderdetails,ordercost).then(data=>console.log(data.rows));
    sbAO(ordernumber,orderdetails,ordercost);
+   console.log("processing")
    res.header("Access-Control-Allow-Origin", "*");
     res.json({"page":"createorder"});
 
